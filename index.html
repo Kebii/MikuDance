@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<style type="text/css">
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35), /* The top layer shadow */ 5px 5px 0 0px #fff, /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35), /* The second layer shadow */ 10px 10px 0 0px #fff, /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35); /* The third layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MikuDance</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+    });
+
+
+
+
+  </script>
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MikuDance: Animating Character Art with Mixed Motion Dynamics</h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+                <a href="https://kebii.github.io"
+                  target="_blank">Jiaxu Zhang</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=tgDc0fsAAAAJ&hl=en" 
+                  target="_blank">Xianfang Zeng</a><sup>2</sup><sup>†</sup>,</span>
+            <span class="author-block">
+                  <a href="https://chenxin.tech/" target="_blank">Xin Chen</a><sup>3</sup>,</span>
+            <span class="author-block">
+                  <a href="" target="_blank">Wei Zuo</a><sup>2</sup>,</span>
+            <span class="author-block">
+                  <a href="https://www.skicyyu.org/" target="_blank">Gang Yu</a><sup>2</sup><sup>*</sup>,</span>
+            <span class="author-block">
+                <a href="" target="_blank">Zhigang Tu</a><sup>1</sup><sup>*</sup>,</span>
+            <span class="author-block"></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>1</sup>Wuhan University, <sup>2</sup>StepFun, <sup>3</sup>ByteDance
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <div class="eql-cntrb">
+              <small><sup>†</sup>Project leader</small>
+              <small><sup>*</sup>Corresponding author</small>
+            </div>
+          </div>
+
+          <!-- <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Under review)</span>
+                </a>
+              </span> -->
+
+              <!-- Supplementary PDF link
+              <span class="link-block">
+                <a href="static/pdfs/CVPR_2023_R2ET_supply.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Supplementary</span>
+              </a>
+            </span> -->
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/Kebii/MikuDance" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                </a>
+              </span>
+
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <!-- <div class="container is-max-desktop">
+    <center>
+      <img class="round" style="width:850px" src="static/images/teaser.jpg"/>
+    </center> -->
+    <h2 class="subtitle has-text-centered">
+      We propose MikuDance, a diffusion-based pipeline incorporating mixed motion dynamics to animate stylized character art.
+    </h2>
+
+    <div class="hero-body" style="display: flex; justify-content: center;">
+      <video poster="" id="tree" autoplay controls loop style="max-width: 1000px; width: 70%;">
+          <!-- Your video here -->
+          <source src="./static/videos/DemoVideo-Queencard.mp4" type="video/mp4">
+      </video>
+  </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose MikuDance, a diffusion-based pipeline incorporating mixed motion dynamics to animate stylized character art. 
+            MikuDance consists of two key techniques: Mixed Motion Modeling and Mixed-Control Diffusion, to address the challenges of high-dynamic motion and reference-guidance misalignment in character art animation. 
+            Specifically, a Scene Motion Tracking strategy is presented to explicitly model the dynamic camera in pixel-wise space, enabling unified character-scene motion modeling. 
+            Building on this, the Mixed-Control Diffusion implicitly aligns the scale and body shape of diverse characters with motion guidance, allowing flexible control of local character motion. 
+            Subsequently, a Motion-Adaptive Normalization module is incorporated to effectively inject global scene motion, paving the way for comprehensive character art animation. 
+            Through extensive experiments, we demonstrate the effectiveness and generalizability of MikuDance across various character art and motion guidance, consistently producing high-quality animations with remarkable motion dynamics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Method -->
+<section class="section" id="method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <table align="center" width="1000px">
+            <tr>
+              <td width="1000px">
+                <img class="round" style="width:1000px" src="static/images/method_overview.png"/>
+              </td>
+            </tr>
+          </table>
+          <table align="center" width="1000px">
+            <tr>
+              <td style="text-align: justify;">
+                Given a reference character art and a driving video, the pixel-wise scene motion is predicted using the Scene Motion Tracking (SMT) strategy, which is combined with the character poses to form the multi-motion guidance. 
+                The Mixed-Control Diffusion model subsequently generates the animation in a latent space, guided by the character poses and the scene motion injected through the Motion-Adaptive Normalization (MAN) module.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+<!-- video carousel -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <br>
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Results Gallery</h2>
+    </div>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item 100">
+          <video poster="" id="pelvis1" autoplay muted loop height="100%">
+            <source src="./static/videos/A0001.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis2" autoplay muted loop height="100%">
+            <source src="./static/videos/A0002.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis3" autoplay muted loop height="100%">
+            <source src="./static/videos/A0003.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis4" autoplay  muted loop height="100%">
+            <source src="./static/videos/A0004.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis5" autoplay  muted loop height="100%">
+            <source src="./static/videos/A0005.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis6" autoplay muted loop height="100%">
+            <source src="./static/videos/A0006.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis7" autoplay muted loop height="100%">
+            <source src="./static/videos/A0007.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis8" autoplay muted loop height="100%">
+            <source src="./static/videos/A0008.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- video carousel -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <br>
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"></h2>
+    </div>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       
+        <div class="item 100">
+          <video poster="" id="pelvis7" autoplay  muted loop height="100%">
+            <source src="./static/videos/B0001.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis8" autoplay  muted loop height="100%">
+            <source src="./static/videos/B0002.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis9" autoplay  muted loop height="100%">
+            <source src="./static/videos/B0003.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis10" autoplay  muted loop height="100%">
+            <source src="./static/videos/B0004.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis11" autoplay  muted loop height="100%">
+            <source src="./static/videos/B0005.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis12" autoplay  muted loop height="100%">
+            <source src="./static/videos/B0006.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis13" autoplay  muted loop height="100%">
+            <source src="./static/videos/B0007.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/B0008.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/B0009.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/B0010.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/B0011.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- video carousel -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <br>
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"></h2>
+    </div>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       
+        <div class="item 100">
+          <video poster="" id="pelvis7" autoplay  muted loop height="100%">
+            <source src="./static/videos/C0001.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis8" autoplay  muted loop height="100%">
+            <source src="./static/videos/C0010.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis9" autoplay  muted loop height="100%">
+            <source src="./static/videos/C0003.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis10" autoplay  muted loop height="100%">
+            <source src="./static/videos/C0008.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis11" autoplay  muted loop height="100%">
+            <source src="./static/videos/C0005.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis12" autoplay  muted loop height="100%">
+            <source src="./static/videos/C0006.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis13" autoplay  muted loop height="100%">
+            <source src="./static/videos/C0007.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/C0002.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/C0009.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/C0004.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/C0011.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/C0012.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item 100">
+          <video poster="" id="pelvis14" autoplay muted loop height="100%">
+            <source src="./static/videos/C0013.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper poster -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <center>
+        <h2 class="title is-3">Technical Paper</h2>
+      </center>
+      <br>
+      <hr>
+      <table align=center width=650px>
+        <tr>
+          <td><a href="https://arxiv.org/abs/"><img class="layered-paper-big" style="height:175px"
+                                                    src="static/images/paper.jpg"/></a></td>
+          <td><span style="font-size:10pt">Jiaxu Zhang, Xianfang Zeng, Xin Chen, Wei Zuo, Gang Yu, Zhigang Tu<br>
+				<b>MikuDance: Animating Character Art with Mixed Motion Dynamics</b><br>
+				arXiv:xxxx.xxxxx, 2024.<br>
+				<span style="font-size:4pt"><a href=""><br></a>
+				</span>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <iframe  src="static/pdfs/MikuDance_CVPR2025__arxiv_.pdf" width="75%" height="600" style="display: block; margin: auto;">
+          </iframe>
+
+    </div>
+  </div>
+</section>
+<!--End paper poster -->
+
+
+<!-- BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{zhang2024mikudance,
+      title={MikuDance: Animating Character Art with Mixed Motion Dynamics}, 
+      author={Jiaxu Zhang and Xianfang Zeng and Xin Chen and Wei Zuo and Gang Yu and Zhigang Tu},
+      year={2024},
+      eprint={xxxx.xxxxx},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+
+            This page was built using the <a href="https://nerfies.github.io/" target="_blank">Nerfies website</a>.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+</html>

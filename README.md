@@ -9,7 +9,7 @@
 
 <a href='https://arxiv.org/abs/2411.08656'><img src='https://img.shields.io/badge/ArXiv-2411.08656-red'></a> <a href='https://kebii.github.io/MikuDance/'><img src='https://img.shields.io/badge/Project-Page-purple'></a>
 
-<img src="https://github.com/Kebii/MikuDance/blob/main/assets/mdimage.gif" alt="MD image" style="width:80%;"><br>
+<img src="https://github.com/Kebii/MikuDance/blob/main/assets/mdimage.gif" alt="MD image" style="width:100%;"><br>
 
 </div>
 

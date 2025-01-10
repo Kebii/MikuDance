@@ -14,10 +14,10 @@
 </div>
 
 ## 📣 Updates
+- **[2025.1.10]** 🕹️ Our MikuDance has recently been launched on the [Lipu](https://m.lipuhome.com/), an AI creation platform designed for animation enthusiasts. We invite everyone to download and try it out. Our code will be released within the next week.
+
 - **[2024.11.15]** ✨️ Paper and project page are released! Please see our demo videos on the project page. Considering the company's policy, the code release will be delayed. 
 We will do our best to make it open source as soon as possible.
-
-- **[2025.1.10]** 🕹️ Our MikuDance has recently been launched on the [Lipu](https://m.lipuhome.com/), an AI creation platform designed for animation enthusiasts. We invite everyone to download and try it out. Our code will be released within the next week.
 
 ## 📄 Citation
 If MikuDance is useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:

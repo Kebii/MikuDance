@@ -17,7 +17,7 @@
 # 📣 Updates
 - **[2025.2.27]** 🔥 The code is released! If you have any questions, please feel free to open an issue.
 
-- **[2025.1.10]** 🕹️ Our MikuDance has recently been launched on the [Lipu](https://m.lipuhome.com/), an AI creation community designed for animation enthusiasts. We invite everyone to download and try it out. Our code will be released within the next week.
+- **[2025.1.10]** 🕹️ Our MikuDance has recently been launched on the [Lipu](https://m.lipuhome.com/), an AI creation community designed for animation enthusiasts. We invite everyone to download and try it out. 
 
 - **[2024.11.15]** ✨️ Paper and project page are released! Please see our demo videos on the project page. Considering the company's policy, the code release will be delayed. 
 We will do our best to make it open source as soon as possible.

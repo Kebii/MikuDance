@@ -1,0 +1,22 @@
+pretrained_base_model_path: "./pretrained_weights/stable-diffusion-v1-5"
+pretrained_vae_path: "./pretrained_weights/sd-vae-ft-mse"
+pretrained_temporal_vae_path: "./pretrained_weights/vae_temporal_decoder"
+image_encoder_path: "./pretrained_weights/image_encoder"
+
+denoising_unet_path: "./pretrained_weights/denoising_unet-60000.pth"
+reference_unet_path: "./pretrained_weights/reference_unet-60000.pth"
+motion_module_path: "./pretrained_weights/motion_module-60000.pth"
+
+inference_config: "./configs/inference/mikudance_config.yaml"
+weight_dtype: 'fp16'
+
+
+ref_image_path: "./demo_samples/chars/img-kamisatoayakagenshinimpact.jpg"
+ref_skel_path: "./demo_samples/chars/skel-img-kamisatoayakagenshinimpact.jpg"
+ref_depth_path: "./demo_samples/chars/depm-img-kamisatoayakagenshinimpact.npy"  # optional, can be null
+
+tgt_pose_path: "./demo_samples/poses/pose-demo1.mp4"
+tgt_face_path: "./demo_samples/poses/face-demo1.mp4"                            # optional, can be null
+tgt_hand_path: "./demo_samples/poses/hand-demo1.mp4"                            # optional, can be null
+tgt_w2c_path: "./demo_samples/poses/w2c-demo1.npy"                              # optional, can be null
+tgt_c2w_path: "./demo_samples/poses/c2w-demo1.npy"                              # optional, can be null

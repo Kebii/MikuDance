@@ -15,7 +15,7 @@
 </div>
 
 # 📣 Updates
-- **[2025.1.17]** 🔥 The code is released! If you have any questions, please feel free to open an issue.
+- **[2025.2.27]** 🔥 The code is released! If you have any questions, please feel free to open an issue.
 
 - **[2025.1.10]** 🕹️ Our MikuDance has recently been launched on the [Lipu](https://m.lipuhome.com/), an AI creation community designed for animation enthusiasts. We invite everyone to download and try it out. Our code will be released within the next week.
 

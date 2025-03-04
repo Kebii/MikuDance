@@ -1,0 +1,7 @@
+# ninja log v5
+0	5575	1720416649999221993	/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/build/temp.linux-x86_64-cpython-38/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/src/cpu/ms_deform_attn_cpu.o	f34008df87fe49b0
+1	16531	1720416660952952252	/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/build/temp.linux-x86_64-cpython-38/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/src/cuda/ms_deform_attn_cuda.o	e24e03282f702651
+1	18778	1720416663199534014	/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/build/temp.linux-x86_64-cpython-38/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/src/vision.o	d1a437f488b27c07
+140	4812	1721310828745839010	/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/build/temp.linux-x86_64-cpython-38/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/src/cpu/ms_deform_attn_cpu.o	f34008df87fe49b0
+141	15232	1721310839165499079	/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/build/temp.linux-x86_64-cpython-38/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/src/cuda/ms_deform_attn_cuda.o	799d3402cc179b0c
+141	15885	1721310839814394254	/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/build/temp.linux-x86_64-cpython-38/data/midjourney/zhangjiaxu/code/UniPose/models/UniPose/ops/src/vision.o	d1a437f488b27c07

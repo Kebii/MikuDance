@@ -172,6 +172,8 @@ python inference_on_image.py \
 
 **Note:** We predefined the color map for the character keypoints. It is necessary to use the same color map and visualization settings as ours during inference.
 
+**Note:** If the driving video features a real human and there is a significant difference in face scale compared to anime characters, we recommend setting the `tgt_face_path` to `null` in the config file.
+
 ## Camera Parameters Estimation
 We utilize [DROID-SLAM](https://github.com/princeton-vl/DROID-SLAM) to estimate the camera parameters of the driving video. You can follow the instructions in the DROID-SLAM repository to install it in the `./src/DROID-SLAM` directory. Then you can run the following command to estimate the camera parameters:
 
